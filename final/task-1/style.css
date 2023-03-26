@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 1em;
+}
+
+body {
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+
+#main {
+	position: relative;
+	background: white;
+}
+
+.header {
+	height: 100vh;
+	background-image: radial-gradient(circle, #30cfd0 0%, #330867 100%);
+	text-align: center;
+	color: white;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header h1 {
+	margin: 10px 0;
+}
+
+.header p {
+	text-shadow: 0 0 2px black;
+}
+
+.header img {
+	width: 500px;
+}
+
+.project {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 50px 50px;
+	border-bottom: 1px solid #ebebeb;
+	background: white;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	opacity: 0;
+}
+
+.project1 {
+	align-items: flex-end;
+}
+.project2 {
+	align-items: flex-start;
+}
+.project3 {
+	align-items: flex-end;
+}
+.project4 {
+	align-items: flex-start;
+}
+
+
+.project img {
+	height: 200px;
+}
+
+.project p {
+	max-width: 300px;
+	text-align: center;
+}
+
+.project h2 {
+	margin: 20px 0;
+}
+
+.project2, .project4 {
+	background: #74A6EE;
+	color: white;
+}
+
+
+.fade-left {
+	transform: translateX(-50%);
+	opacity: 1;
+	transition: 1s;
+}
+.fade-right {
+	transform: translateX(50%);
+	opacity: 1;
+	transition: 1s;
+}
